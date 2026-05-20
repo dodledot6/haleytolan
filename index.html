@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">Your Name</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#designs">Designs</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#coursework">Coursework</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Your Name</h1>
+      <p class="hero-tagline">Student &bull; Designer &bull; Researcher</p>
+      <div class="hero-cta">
+        <a href="#resume" class="btn btn-primary">View Resume</a>
+        <a href="#designs" class="btn btn-outline">See My Work</a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="circle circle-1"></div>
+      <div class="circle circle-2"></div>
+      <div class="circle circle-3"></div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="section">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <p class="section-subtitle">My academic and professional background</p>
+
+      <div class="resume-grid">
+        <div class="resume-column">
+          <h3 class="resume-category">Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Bachelor of Science</h4>
+                <p class="timeline-place">University Name &bull; 2022 – Present</p>
+                <p>Major: Your Major | GPA: X.XX</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>High School Diploma</h4>
+                <p class="timeline-place">High School Name &bull; 2018 – 2022</p>
+                <p>Relevant honors and awards</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="resume-category">Skills</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Skill 1</span>
+            <span class="skill-tag">Skill 2</span>
+            <span class="skill-tag">Adobe Illustrator</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Skill 6</span>
+          </div>
+        </div>
+
+        <div class="resume-column">
+          <h3 class="resume-category">Experience</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Position Title</h4>
+                <p class="timeline-place">Organization &bull; Month Year – Present</p>
+                <p>Brief description of your role and key accomplishments.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Position Title</h4>
+                <p class="timeline-place">Organization &bull; Month Year – Month Year</p>
+                <p>Brief description of your role and key accomplishments.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-download">
+            <a href="resume.pdf" class="btn btn-primary" download>Download Full Resume (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Graphic Designs -->
+  <section id="designs" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Graphic Designs</h2>
+      <p class="section-subtitle">A selection of my creative work</p>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="illustration">Illustration</button>
+        <button class="filter-btn" data-filter="layout">Layout</button>
+      </div>
+
+      <div class="designs-grid">
+        <div class="design-card" data-category="branding">
+          <div class="design-placeholder">
+            <span>+ Add Image</span>
+          </div>
+          <div class="design-info">
+            <h4>Project Title</h4>
+            <p>Branding &bull; 2024</p>
+          </div>
+        </div>
+        <div class="design-card" data-category="illustration">
+          <div class="design-placeholder">
+            <span>+ Add Image</span>
+          </div>
+          <div class="design-info">
+            <h4>Project Title</h4>
+            <p>Illustration &bull; 2024</p>
+          </div>
+        </div>
+        <div class="design-card" data-category="layout">
+          <div class="design-placeholder">
+            <span>+ Add Image</span>
+          </div>
+          <div class="design-info">
+            <h4>Project Title</h4>
+            <p>Layout &bull; 2023</p>
+          </div>
+        </div>
+        <div class="design-card" data-category="branding">
+          <div class="design-placeholder">
+            <span>+ Add Image</span>
+          </div>
+          <div class="design-info">
+            <h4>Project Title</h4>
+            <p>Branding &bull; 2023</p>
+          </div>
+        </div>
+        <div class="design-card" data-category="illustration">
+          <div class="design-placeholder">
+            <span>+ Add Image</span>
+          </div>
+          <div class="design-info">
+            <h4>Project Title</h4>
+            <p>Illustration &bull; 2023</p>
+          </div>
+        </div>
+        <div class="design-card" data-category="layout">
+          <div class="design-placeholder">
+            <span>+ Add Image</span>
+          </div>
+          <div class="design-info">
+            <h4>Project Title</h4>
+            <p>Layout &bull; 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <p class="section-subtitle">My research and academic writing</p>
+
+      <div class="publications-list">
+        <div class="publication-card">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <h4 class="pub-title">Publication Title Goes Here</h4>
+            <p class="pub-authors">Your Name, Co-Author Name, Co-Author Name</p>
+            <p class="pub-venue"><em>Journal or Conference Name</em>, Volume X, Issue Y</p>
+            <p class="pub-abstract">A short abstract or description of what the publication is about and its significance.</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">PDF</a>
+              <a href="#" class="pub-link">DOI</a>
+              <a href="#" class="pub-link">Abstract</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <h4 class="pub-title">Another Publication Title</h4>
+            <p class="pub-authors">Your Name, Co-Author Name</p>
+            <p class="pub-venue"><em>Journal or Conference Name</em>, Volume X</p>
+            <p class="pub-abstract">A short abstract or description of what the publication is about and its significance.</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">PDF</a>
+              <a href="#" class="pub-link">DOI</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <h4 class="pub-title">A Third Publication or Poster Presentation</h4>
+            <p class="pub-authors">Your Name</p>
+            <p class="pub-venue"><em>Conference or Workshop Name</em></p>
+            <p class="pub-abstract">A short abstract or description of the work presented.</p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">Poster</a>
+              <a href="#" class="pub-link">Slides</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coursework -->
+  <section id="coursework" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Relevant Coursework</h2>
+      <p class="section-subtitle">Courses that have shaped my academic foundation</p>
+
+      <div class="courses-grid">
+        <div class="course-category-card">
+          <div class="course-icon">&#128218;</div>
+          <h3>Core Major Courses</h3>
+          <ul class="course-list">
+            <li>
+              <span class="course-name">Course Name 101</span>
+              <span class="course-grade">A</span>
+            </li>
+            <li>
+              <span class="course-name">Course Name 201</span>
+              <span class="course-grade">A</span>
+            </li>
+            <li>
+              <span class="course-name">Course Name 301</span>
+              <span class="course-grade">A-</span>
+            </li>
+            <li>
+              <span class="course-name">Course Name 401</span>
+              <span class="course-grade">B+</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="course-category-card">
+          <div class="course-icon">&#128187;</div>
+          <h3>Technical Courses</h3>
+          <ul class="course-list">
+            <li>
+              <span class="course-name">Technical Course 1</span>
+              <span class="course-grade">A</span>
+            </li>
+            <li>
+              <span class="course-name">Technical Course 2</span>
+              <span class="course-grade">A-</span>
+            </li>
+            <li>
+              <span class="course-name">Technical Course 3</span>
+              <span class="course-grade">A</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="course-category-card">
+          <div class="course-icon">&#127775;</div>
+          <h3>Design &amp; Creative</h3>
+          <ul class="course-list">
+            <li>
+              <span class="course-name">Design Fundamentals</span>
+              <span class="course-grade">A</span>
+            </li>
+            <li>
+              <span class="course-name">Graphic Design Studio</span>
+              <span class="course-grade">A</span>
+            </li>
+            <li>
+              <span class="course-name">Typography</span>
+              <span class="course-grade">A+</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="course-category-card">
+          <div class="course-icon">&#128300;</div>
+          <h3>Research &amp; Methods</h3>
+          <ul class="course-list">
+            <li>
+              <span class="course-name">Research Methods</span>
+              <span class="course-grade">A</span>
+            </li>
+            <li>
+              <span class="course-name">Statistics</span>
+              <span class="course-grade">A-</span>
+            </li>
+            <li>
+              <span class="course-name">Academic Writing</span>
+              <span class="course-grade">A</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">I'd love to hear from you</p>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">&#9993;</span>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:your@email.com">your@email.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#128101;</span>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="#" target="_blank">linkedin.com/in/yourprofile</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#128196;</span>
+            <div>
+              <h4>Google Scholar</h4>
+              <a href="#" target="_blank">scholar.google.com/yourprofile</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
