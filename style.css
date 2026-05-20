@@ -302,6 +302,19 @@ ul { list-style: none; }
   color: var(--gray-600);
 }
 
+.role-list { margin-top: 0.4rem; }
+.role-list dt {
+  font-size: 0.85rem;
+  color: var(--lavender-500);
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.role-list dd {
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--gray-600);
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
