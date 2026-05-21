@@ -259,6 +259,90 @@ ul { list-style: none; }
   border-bottom: 2px solid var(--lavender-200);
 }
 
+/* ===== RESUME SUMMARY ===== */
+.resume-summary {
+  background: var(--lavender-50);
+  border-left: 4px solid var(--lavender-400);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 3rem;
+  color: var(--gray-700);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ===== ACTIVITY LIST (education) ===== */
+.activity-list {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* ===== ROLE BULLETS ===== */
+.role-bullets {
+  margin-top: 0.35rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--gray-600);
+}
+
+/* ===== CERTIFICATIONS ===== */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+.cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--lavender-100);
+}
+.cert-name { color: var(--gray-700); }
+.cert-date {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--lavender-500);
+}
+
+/* ===== PRESENTATIONS ===== */
+.presentations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+.presentation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: 0.875rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--lavender-100);
+}
+.pres-title { color: var(--gray-700); }
+.pres-date {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--lavender-500);
+}
+
 .timeline { margin-bottom: 2.5rem; }
 .timeline-item {
   display: flex;
