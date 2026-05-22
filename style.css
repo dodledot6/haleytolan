@@ -658,7 +658,7 @@ ul { list-style: none; }
   background: var(--lavender-50);
   padding: 2rem;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--lavender-100);
+  border: 2px solid var(--lavender-400);
 }
 .form-group {
   margin-bottom: 1.25rem;
