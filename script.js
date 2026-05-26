@@ -47,6 +47,28 @@ filterBtns.forEach(btn => {
   });
 });
 
+// Project carousel
+(function () {
+  const track = document.querySelector('#projectCarousel .carousel-track');
+  const slides = document.querySelectorAll('#projectCarousel .carousel-slide');
+  const dots = document.querySelectorAll('#carouselDots .dot');
+  const prev = document.querySelector('#projectCarousel .carousel-prev');
+  const next = document.querySelector('#projectCarousel .carousel-next');
+  if (!track || !slides.length) return;
+
+  let current = 0;
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+})();
+
 // Contact form (static site placeholder — wire to Formspree or similar)
 function handleFormSubmit(e) {
   e.preventDefault();
