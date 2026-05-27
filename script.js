@@ -60,16 +60,17 @@ document.querySelectorAll('.photo-carousel').forEach(wrapper => {
 
   function goTo(index) {
     current = (index + slides.length) % slides.length;
-    track.style.transform = `translateX(-${current * 100}%)`;
+    track.style.transform = `translateX(${-current * slides[0].offsetWidth}px)`;
     dots.forEach((d, i) => d.classList.toggle('active', i === current));
   }
 
   prev && prev.addEventListener('click', () => goTo(current - 1));
   next && next.addEventListener('click', () => goTo(current + 1));
   dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+  window.addEventListener('resize', () => goTo(current));
 });
 
-// Project carousel
+// Project carousel (homepage)
 (function () {
   const track = document.querySelector('#projectCarousel .carousel-track');
   const slides = document.querySelectorAll('#projectCarousel .carousel-slide');
@@ -82,13 +83,14 @@ document.querySelectorAll('.photo-carousel').forEach(wrapper => {
 
   function goTo(index) {
     current = (index + slides.length) % slides.length;
-    track.style.transform = `translateX(-${current * 100}%)`;
+    track.style.transform = `translateX(${-current * slides[0].offsetWidth}px)`;
     dots.forEach((d, i) => d.classList.toggle('active', i === current));
   }
 
   prev.addEventListener('click', () => goTo(current - 1));
   next.addEventListener('click', () => goTo(current + 1));
   dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+  window.addEventListener('resize', () => goTo(current));
 })();
 
 // Contact form (static site placeholder — wire to Formspree or similar)
