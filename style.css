@@ -533,6 +533,19 @@ ul { list-style: none; }
   padding-top: 0.25rem;
 }
 
+.pub-type {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--lavender-600);
+  background: var(--lavender-100);
+  border-radius: var(--radius-xl);
+  padding: 0.15rem 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
 .pub-title {
   font-weight: 600;
   font-size: 1.05rem;
