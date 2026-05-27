@@ -630,6 +630,102 @@ ul { list-style: none; }
   font-size: 0.85rem;
 }
 
+/* ===== PROJECT LINK (main carousel title) ===== */
+.project-link {
+  color: var(--lavender-800);
+  text-decoration: none;
+  border-bottom: 2px solid var(--lavender-200);
+  padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+.project-link:hover {
+  color: var(--lavender-600);
+  border-bottom-color: var(--lavender-500);
+}
+
+/* ===== PROJECT DETAIL PAGE ===== */
+.project-page {
+  padding-top: 5rem;
+  min-height: 100vh;
+  background: var(--white);
+}
+.project-page .container {
+  padding: 3rem 1.5rem 5rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--lavender-600);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: color var(--transition);
+}
+.back-link:hover { color: var(--lavender-800); }
+
+.project-header { margin-bottom: 2rem; }
+.project-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--lavender-800);
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+/* Photo carousel (project pages) */
+.photo-carousel { margin-bottom: 3rem; }
+
+.photo-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+.photo-slide { min-width: 100%; box-sizing: border-box; }
+
+.photo-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, var(--lavender-100), var(--lavender-200));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lavender-500);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.photo-slide img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-md);
+}
+.photo-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  margin-top: 0.6rem;
+  font-style: italic;
+}
+
+.project-body { max-width: 720px; margin-top: 0.5rem; }
+.project-body h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--lavender-700);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--lavender-200);
+}
+.project-body p {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
 /* ===== PROJECTS CAROUSEL ===== */
 .carousel {
   display: flex;

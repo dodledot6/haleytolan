@@ -47,6 +47,28 @@ filterBtns.forEach(btn => {
   });
 });
 
+// Photo carousels on project detail pages
+document.querySelectorAll('.photo-carousel').forEach(wrapper => {
+  const track = wrapper.querySelector('.photo-track');
+  const slides = wrapper.querySelectorAll('.photo-slide');
+  const prev = wrapper.querySelector('.carousel-prev');
+  const next = wrapper.querySelector('.carousel-next');
+  const dots = wrapper.querySelectorAll('.dot');
+  if (!track || !slides.length) return;
+
+  let current = 0;
+
+  function goTo(index) {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  prev && prev.addEventListener('click', () => goTo(current - 1));
+  next && next.addEventListener('click', () => goTo(current + 1));
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+});
+
 // Project carousel
 (function () {
   const track = document.querySelector('#projectCarousel .carousel-track');
